@@ -1,1 +1,2 @@
-code %cd%
+@echo off
+code %cd% | exit
