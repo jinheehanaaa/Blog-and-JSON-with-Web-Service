@@ -6,7 +6,8 @@
 - - crossAxisAlignment (stretch)
 - - StatelessWidget
 - Load images from url 
-- Styles (similar to CSS)
+- Styles (Make it reusable)
+- Font (ttf file)
 
 # Version (In case of incompatibility)
 - Flutter sdk 3.3.10
