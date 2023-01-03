@@ -7,7 +7,7 @@ class MockLocation extends Location {
   static Location FetchAny() {
     return Location(
         name: 'Arashiyama Bamboo Grove, Kyoto, Japan',
-        url: 'https://google.com',
+        url: 'https://media.tenor.com/nrrR0__sNeoAAAAi/cute.gif',
         facts: <LocationFact>[
           LocationFact(
               title: 'Summary',
