@@ -17,12 +17,14 @@ mixin MockLocation implements Location {
               title: 'How to Get There',
               text:
                   'Kyoto airport, with several terminals, is located 16 kilometres south of the city and is also known as Kyoto. Kyoto can also be reached by transport links from other regional airports.')
-        ]),
+        ],
+        tourPackageName: '',
+        userItinerarySummary: ''),
     Location(
         id: 2,
         name: 'Mount Fuji',
         url:
-            'https://img3.goodfon.ru/original/1920x1080/a/a5/fuji-peizazh-iaponiia-gora-tsvety-nebo.jpg',
+            'https://pdd5k477ulx482prl3bm3by1-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/Mt-Fuji-Golf-Fairway.jpg',
         facts: <LocationFact>[
           LocationFact(
               title: 'Summary',
@@ -32,12 +34,14 @@ mixin MockLocation implements Location {
               title: 'Did You Know',
               text:
                   'There are three cities that surround Mount Fuji: Gotemba, Fujiyoshida and Fujinomiya.')
-        ]),
+        ],
+        tourPackageName: '',
+        userItinerarySummary: ''),
     Location(
         id: 3,
         name: 'Kiyomizu-dera',
         url:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Kiyomizu-dera_in_Kyoto-r.jpg/800px-Kiyomizu-dera_in_Kyoto-r.jpg',
+            'https://media4.trover.com/T/5a97b80c8beb7fbf57002ffe/fixedw_large_4x.jpg',
         facts: <LocationFact>[
           LocationFact(
               title: 'Summary',
@@ -46,7 +50,9 @@ mixin MockLocation implements Location {
           LocationFact(
               title: 'Architectural Style',
               text: 'Japanese Buddhist architecture')
-        ]),
+        ],
+        tourPackageName: '',
+        userItinerarySummary: ''),
     Location(
         id: 4,
         name: 'Kinkaku-ji',
@@ -61,7 +67,9 @@ mixin MockLocation implements Location {
               title: 'Did You Know',
               text:
                   'The Golden Pavilion is set in a magnificent Japanese strolling garden.')
-        ]),
+        ],
+        tourPackageName: '',
+        userItinerarySummary: ''),
     Location(
         id: 5,
         name: 'Odaiba',
@@ -76,7 +84,9 @@ mixin MockLocation implements Location {
               title: 'Did You Know',
               text:
                   'The pedestrian path begins a short walk from Shibaura-futo Station along the Yurikamome on the "Tokyo side" of the bridge, while Odaiba Kaihinkoen Station is the nearest station on the "Odaiba side."')
-        ]),
+        ],
+        tourPackageName: '',
+        userItinerarySummary: ''),
   ];
 
   static Location fetchAny() {
