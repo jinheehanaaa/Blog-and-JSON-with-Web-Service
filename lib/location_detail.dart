@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'mocks/mock_location.dart';
 import 'models/location.dart';
+import 'mocks/mock_location.dart';
 import 'styles.dart';
 
 class LocationDetail extends StatelessWidget {
@@ -14,16 +14,17 @@ class LocationDetail extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(title: Text(location.name, style: Styles.navBarTitle)),
-        body: Column(
+        body: SingleChildScrollView(
+            child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: _renderBody(context, location),
-        ));
+        )));
   }
 
   List<Widget> _renderBody(BuildContext context, Location location) {
     var result = <Widget>[];
-    result.add(_bannerImage(location.url, 250.0));
+    result.add(_bannerImage(location.url, 170.0));
     result.addAll(_renderFacts(context, location));
     return result;
   }
@@ -51,9 +52,14 @@ class LocationDetail extends StatelessWidget {
   }
 
   Widget _bannerImage(String url, double height) {
-    return Container(
-      constraints: BoxConstraints.tightFor(height: height),
-      child: Image.network(url, fit: BoxFit.fitWidth),
-    );
+    try {
+      return Container(
+        constraints: BoxConstraints.tightFor(height: height),
+        child: Image.network(url, fit: BoxFit.fitWidth),
+      );
+    } catch (e) {
+      print("could not load image $url");
+      return Container();
+    }
   }
 }

@@ -13,6 +13,11 @@
 # Objective 2
 - fetch by id for lightweight rendering (fetch)
 - Test (Dart's function test)
+- Integration test (Flutter's widget test)
+- ScrollVIew
+
+# 3rd party packages
+- [image_test_utils](https://pub.dev/packages/image_test_utils)
 
 # Version (In case of incompatibility)
 - Flutter sdk 3.3.10
