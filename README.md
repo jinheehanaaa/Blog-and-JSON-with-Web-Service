@@ -15,6 +15,13 @@
 - Test (Dart's function test)
 - Integration test (Flutter's widget test)
 - ScrollVIew
+- JSON 
+- - We need to decode (or deserialize) data coming from server
+- map (data with unique key)
+
+# CMD
+- Run this code once: <code>flutter packages pub run build_runner build</code> for using json package
+
 
 # 3rd party packages
 - [image_test_utils](https://pub.dev/packages/image_test_utils)
