@@ -8,10 +8,11 @@
 - Load images from url 
 - Styles (Make it reusable)
 - Font (ttf file)
-- Callback (onTap)
+- Callback (onTap) as eventhandler
 
 # Objective 2
 - fetch by id for lightweight rendering (fetch)
+- Test (Dart's function test)
 
 # Version (In case of incompatibility)
 - Flutter sdk 3.3.10
