@@ -20,6 +20,7 @@
 - map (data with unique key)
 - Consuming web service
 - - endpoint for uri
+- StatefulWidget
 
 # CMD
 - Run this code once: <code>flutter packages pub run build_runner build</code> for using json package
