@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'models/location.dart';
+import 'components/default_app_bar.dart';
+import 'components/banner_image.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'components/location_tile.dart';
 import 'styles.dart';
@@ -32,7 +34,7 @@ class _LocationDetailState extends State<LocationDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text(location.name, style: Styles.navBarTitle)),
+        appBar: DefaultAppBar(),
         body: Stack(children: [
           _renderBody(context, location),
           _renderFooter(context, location),
@@ -51,7 +53,7 @@ class _LocationDetailState extends State<LocationDetail> {
 
   Widget _renderBody(BuildContext context, Location location) {
     var result = <Widget>[];
-    result.add(_bannerImage(location.url, BannerImageHeight));
+    result.add(BannerImage(url: location.url, height: BannerImageHeight));
     result.add(_renderHeader());
     result.addAll(_renderFacts(context, location));
     return SingleChildScrollView(
@@ -78,8 +80,9 @@ class _LocationDetailState extends State<LocationDetail> {
             decoration: BoxDecoration(color: Colors.white.withOpacity(0.5)),
             height: FooterHeight,
             child: Container(
-                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
-                child: _renderBookButton()),
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
+              //child: _renderBookButton()
+            ),
           )
         ]);
   }
@@ -123,6 +126,7 @@ class _LocationDetailState extends State<LocationDetail> {
     }
   }
 
+// I'm not using book(reservation) feature
   Widget _renderBookButton() {
     return ElevatedButton(
       //color: Styles.accentColor,
@@ -132,6 +136,7 @@ class _LocationDetailState extends State<LocationDetail> {
     );
   }
 
+// I'm not using book(reservation) feature
   void _handleBookPress() async {
     const url = 'mailto:hello@tourism.co?subject=inquiry';
     // ignore: deprecated_member_use

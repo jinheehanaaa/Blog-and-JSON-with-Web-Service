@@ -11,7 +11,7 @@
 - Callback (onTap) as eventhandler
 
 # Objective 2
-- fetch by id for lightweight rendering (fetch)
+- fetch (by id) for lightweight rendering (fetch)
 - Test (Dart's function test)
 - Integration test (Flutter's widget test)
 - ScrollVIew
@@ -22,15 +22,19 @@
 - - endpoint for uri
 - StatefulWidget
 - Progressbar
+- Custom Appbar
 
+# Demo
+- decoded JSON from [Flutter Crash Course](https://fluttercrashcourse.com/courses/basics).
+- [YouTube](https://youtu.be/On4kEM6yGr8)
 
+# Tip
+- If you want offline mode (not using json from web service), go to [002 - Sanity Checks with Integration Tests](https://github.com/jinheehanaaa/flutter-blog-and-json-from-web-service/tree/cb65b91bb7d36b1529329fdfbccc6469c34e0571)
+- - But you're app size will be limited
 
 # CMD
-- Run this code once: <code>flutter packages pub run build_runner build</code> for using json package
+- Run this code for generate g.dart files: <code>flutter packages pub run build_runner build</code> for using json package
 - Run this code for overwrite: <code>flutter packages pub run build_runner build --delete-conflicting-outputs</code> 
-
-# 3rd party packages
-- [image_test_utils](https://pub.dev/packages/image_test_utils)
 
 # Version (In case of incompatibility)
 - Flutter sdk 3.3.10
@@ -40,4 +44,7 @@
 - [Flutter Crash Course](https://fluttercrashcourse.com/courses/basics)
 - [Official GitHub](https://github.com/seenickcode/fluttercrashcourse-lessons/)
 - [JSON](https://fluttercrashcourse.com/api/v1/locations)
-- - [JSON](https://fluttercrashcourse.com/api/v1/locations/<id>)
+- [JSON](https://fluttercrashcourse.com/api/v1/locations/<id>)
+
+# Private-Use-Only
+- [This URL](https://github.com/jinheehanaaa/flutter-blog-and-json-from-web-service)
